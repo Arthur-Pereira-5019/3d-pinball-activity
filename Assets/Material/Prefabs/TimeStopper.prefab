@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: c02747e7134ef1948a039c94a8f33c5b, type: 3}
       propertyPath: m_Name
-      value: Coin Variant
+      value: TimeStopper
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c02747e7134ef1948a039c94a8f33c5b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -70,9 +70,6 @@ PrefabInstance:
       addedObject: {fileID: 5592089402290260824}
     - targetCorrespondingSourceObject: {fileID: 100000, guid: c02747e7134ef1948a039c94a8f33c5b, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 8825708591624140750}
-    - targetCorrespondingSourceObject: {fileID: 100000, guid: c02747e7134ef1948a039c94a8f33c5b, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 283151577358408178}
     - targetCorrespondingSourceObject: {fileID: 100000, guid: c02747e7134ef1948a039c94a8f33c5b, type: 3}
       insertIndex: -1
@@ -83,6 +80,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: c02747e7134ef1948a039c94a8f33c5b, type: 3}
       insertIndex: -1
       addedObject: {fileID: -4296455061898392976}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: c02747e7134ef1948a039c94a8f33c5b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5014026837246865896}
   m_SourcePrefab: {fileID: 100100000, guid: c02747e7134ef1948a039c94a8f33c5b, type: 3}
 --- !u!1 &2408102058485447060 stripped
 GameObject:
@@ -110,20 +110,6 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 1.2
   m_Center: {x: 0.00000059604645, y: -0.000000059604645, z: 0.0000006109476}
---- !u!114 &8825708591624140750
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2408102058485447060}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33607e24f3d064cf38cafb600232db7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  value: 10
-  explosionPrefab: {fileID: 0}
 --- !u!114 &283151577358408178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136,7 +122,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af64e16431cec4c4bab0f11e88c6d902, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 50
+  speed: 20
   way: 1
 --- !u!54 &758453794400751179
 Rigidbody:
@@ -240,8 +226,8 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 0.8386046, b: 0, a: 1}
-      key1: {r: 1, g: 0.8386046, b: 0, a: 1}
+      key0: {r: 1, g: 0, b: 0.9525628, a: 1}
+      key1: {r: 1, g: 0, b: 0.9525628, a: 1}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -302,3 +288,18 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300004, guid: 00718395eefb6084bb25555f962f25c0, type: 3}
+--- !u!114 &5014026837246865896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2408102058485447060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 902c36fda47c4e2428425fb3d975084d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value: 15
+  toStopTime: 20
+  explosionPrefab: {fileID: 1880247766814726456, guid: 3937b6b50dfaeab4e8eb286e0e7874b2, type: 3}

@@ -120,7 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6909342520ee9487e9b35dd7277a3fff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnPrefab: {fileID: 2408102058485447060, guid: 7a3bde93202b9c1469a702094e4854a3, type: 3}
+  spawnPrefab: {fileID: 2219264822998218012, guid: 48a6d481d4484184882a237430d7f315, type: 3}
   minSecondsBetweenSpawning: 12
   maxSecondsBetweenSpawning: 13
   chaseTarget: {fileID: 0}

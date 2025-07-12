@@ -33,6 +33,9 @@ public class GameManager : MonoBehaviour {
 
 	private Health playerHealth;
 
+	public bool timeFlow;
+	public float timeStopped;
+
 	void Start () {
 		if (gm == null) 
 			gm = gameObject.GetComponent<GameManager>();
@@ -77,6 +80,11 @@ public class GameManager : MonoBehaviour {
 					// switch which GUI is showing			
 					mainCanvas.SetActive (false);
 					beatLevelCanvas.SetActive (true);
+				}
+				if(timeStopped > 0 ) {
+					timeStopped-= Time.deltaTime;;
+				}else {
+					timeFlow = false;
 				}
 				break;
 			case gameStates.Death:

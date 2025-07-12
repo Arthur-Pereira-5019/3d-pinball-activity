@@ -10,9 +10,12 @@ namespace UnityStandardAssets.Utility
         public bool ignoreTimescale;
         private float m_LastRealTime;
 
+        private Rigidbody m_Rigidbody;
+
 
         private void Start()
         {
+            m_Rigidbody = GetComponent<Rigidbody>();
             m_LastRealTime = Time.realtimeSinceStartup;
         }
 
@@ -26,7 +29,7 @@ namespace UnityStandardAssets.Utility
                 deltaTime = (Time.realtimeSinceStartup - m_LastRealTime);
                 m_LastRealTime = Time.realtimeSinceStartup;
             }
-            transform.Translate(moveUnitsPerSecond.value*deltaTime, moveUnitsPerSecond.space);
+            m_Rigidbody.AddForce(moveUnitsPerSecond.value*deltaTime);
             transform.Rotate(rotateDegreesPerSecond.value*deltaTime, moveUnitsPerSecond.space);
         }
 

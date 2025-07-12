@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 900639938488349663}
   - component: {fileID: 8824578536498730275}
   - component: {fileID: 5854525331625516150}
-  - component: {fileID: 233953308847707138}
   - component: {fileID: 5867875719204910231}
+  - component: {fileID: 6733239626067352368}
   m_Layer: 0
   m_Name: Explosion
   m_TagString: Untagged
@@ -4834,20 +4834,6 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
---- !u!114 &233953308847707138
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6981084219222949646}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29014cd42b6d273408e0ceefd336c0b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  minDuration: 1
-  maxDuration: 3
 --- !u!108 &5867875719204910231
 Light:
   m_ObjectHideFlags: 0
@@ -4909,3 +4895,17 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &6733239626067352368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6981084219222949646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29014cd42b6d273408e0ceefd336c0b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minDuration: 3
+  maxDuration: 5
